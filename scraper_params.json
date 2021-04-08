@@ -1,0 +1,14 @@
+{"_id":"provisionfrei_haus_kauf_50km_von_berlin","startUrl":["https://www.immobilienscout24.de/Suche/radius/haus-kaufen?centerofsearchaddress=Berlin;;;1276003001;Berlin;&constructionphasetypes=noinformation,completed,underconstruction&rented=false&numberofrooms=4.0-&price=-400000.0&livingspace=110.0-&constructionyear=2010-&geocoordinates=52.51051;13.43068;50.0&enteredFrom=result_list&pagenumber=[1-7]"],"selectors":
+[{"id":"Haus","type":"SelectorLink","parentSelectors":["_root"],"selector":".result-list-entry__data a.result-list-entry__brand-title-container","multiple":true,"delay":0},
+{"id":"ScoutID","type":"SelectorText","parentSelectors":["Haus"],"selector":"div.is24-scoutid__content","multiple":false,"regex":"(?<=ID: ).*$","delay":0},
+{"id":"Kaufspreis","type":"SelectorText","parentSelectors":["Haus"],"selector":"div.is24qa-kaufpreis-main","multiple":false,"regex":"[0-9]+.[0-9]+","delay":0},
+{"id":"Zimmer","type":"SelectorText","parentSelectors":["Haus"],"selector":"dd.is24qa-zimmer","multiple":false,"regex":"","delay":0},
+{"id":"Maklerprovision","type":"SelectorText","parentSelectors":["Haus"],"selector":"span.broker-commission-value","multiple":false,"regex":"[0-9]+.[0-9]+","delay":0},
+{"id":"Grunderwerbssteuer","type":"SelectorText","parentSelectors":["Haus"],"selector":"span.land-transfer-value","multiple":false,"regex":"[0-9]+.[0-9]+","delay":0},
+{"id":"Notarkosten","type":"SelectorText","parentSelectors":["Haus"],"selector":"span.notary-costs-value","multiple":false,"regex":"[0-9]+.[0-9]+","delay":0},
+{"id":"Grundbucheintrag","type":"SelectorText","parentSelectors":["Haus"],"selector":"span.entry-land-register-value","multiple":false,"regex":"[0-9]+.[0-9]+","delay":0},
+{"id":"Baujahr","type":"SelectorText","parentSelectors":["Haus"],"selector":"dd.is24qa-baujahr","multiple":false,"regex":"","delay":0},
+{"id":"Adresse","type":"SelectorText","parentSelectors":["Haus"],"selector":"span.zip-region-and-country","multiple":false,"regex":"","delay":0},
+{"id":"Wohnflache","type":"SelectorText","parentSelectors":["Haus"],"selector":"dd.is24qa-wohnflaeche-ca","multiple":false,"regex":"","delay":0},
+{"id":"Grundstuck","type":"SelectorText","parentSelectors":["Haus"],"selector":"dd.is24qa-grundstueck-ca","multiple":false,"regex":"","delay":0}
+]}
